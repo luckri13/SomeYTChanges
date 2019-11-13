@@ -12,7 +12,13 @@
 
 (function() {
     'use strict';
+    
+    var itemsPerRow = 8;
+    
+    var customSettingsCss = '#contents.ytd-rich-grid-renderer{ --ytd-rich-grid-items-per-row: ' + itemsPerRow + ';--ytd-rich-grid-posts-per-row: ' + itemsPerRow + ';--ytd-rich-grid-movies-per-row: ' + itemsPerRow + ';}';
 
     var newCSS = GM_getResourceText ("customcss");
     GM_addStyle (newCSS);
+    
+    GM_addStyle (customSettingsCss);
 })();

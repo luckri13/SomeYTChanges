@@ -1,0 +1,104 @@
+#page-manager.ytd-app {
+       margin-top: var(--ytd-masthead-height, 40px);  
+}
+
+#contents.ytd-rich-grid-renderer{ 
+--ytd-rich-grid-items-per-row: 8;
+--ytd-rich-grid-posts-per-row: 8;
+--ytd-rich-grid-movies-per-row: 8;
+width: 85% !important;
+    display: var(--layout-horizontal_-_display);
+    -ms-flex-direction: var(--layout-horizontal_-_-ms-flex-direction);
+    -webkit-flex-direction: var(--layout-horizontal_-_-webkit-flex-direction);
+    flex-direction: var(--layout-horizontal_-_flex-direction);
+    justify-content: flex-start;
+}
+
+ytd-rich-item-renderer 
+{
+    margin-right: 4px;
+    margin-left: 4px;
+    display: inline-block;
+    margin-bottom: 24px;
+}
+
+#video-title.ytd-rich-grid-video-renderer{ 
+    display: -webkit-box;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+#title.ytd-rich-grid-renderer {
+        color: var(--yt-spec-text-primary);
+    display: block;
+    max-height: 2rem;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-left: 5%;
+}
+
+
+#title-container.ytd-rich-grid-renderer {
+    color: var(--yt-spec-text-primary);
+    height: 2rem;
+    display: var(--layout-horizontal_-_display);
+    -ms-flex-direction: var(--layout-horizontal_-_-ms-flex-direction);
+    -webkit-flex-direction: var(--layout-horizontal_-_-webkit-flex-direction);
+    flex-direction: var(--layout-horizontal_-_flex-direction);
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#avatar-link{ display:none }
+
+.ytd-video-meta-block { 
+    color: var(--ytd-metadata-line-color, var(--yt-spec-text-secondary));
+    max-width: 100%;
+    display: block;
+    max-height: 3.6rem;
+    overflow: visible;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-transform: none;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+ytd-channel-name {
+    font-size: 1.2rem !important;
+}
+
+ytd-app {
+    --app-drawer-width: 240px;
+    --app-drawer-content-container_-_background-color: var(--yt-main-app-background);
+    background: var(--yt-main-app-background);
+    display: block;
+    left: 0;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+ytd-browse {
+    overflow: hidden;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Fix YT design
 // @author       Vidarr
-// @resource     oldytcss https://raw.githubusercontent.com/luckri13/tempFiles/master/oldyt.css
+// @resource     customcss https://raw.githubusercontent.com/luckri13/SomeYTChanges/master/customYT.css
 // @include      /https?:\/\/www\.(youtube)\.com\/.*/
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
@@ -13,6 +13,6 @@
 (function() {
     'use strict';
 
-    var newCSS = GM_getResourceText ("oldytcss");
+    var newCSS = GM_getResourceText ("customcss");
     GM_addStyle (newCSS);
 })();

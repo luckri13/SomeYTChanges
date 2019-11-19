@@ -13,4 +13,5 @@ www.youtube.com##ytd-item-section-renderer:has(span:has-text(/Latest YouTube pos
 www.youtube.com##ytd-rich-section-renderer:has(span:has-text(/YouTube Mixes/i))
 www.youtube.com##ytd-rich-section-renderer:has(span:has-text(/Breaking News/i))
 www.youtube.com##ytd-rich-section-renderer:has(span:has-text(/Latest YouTube posts/i))
+www.youtube.com##ytd-rich-section-renderer:has(span:has-text(/Trending/i))
 ```
